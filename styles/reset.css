@@ -9,3 +9,7 @@ body {
 body a:hover {
   cursor: pointer;
 }
+
+body, html {
+  height: 100%;
+}
