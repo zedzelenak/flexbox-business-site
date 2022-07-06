@@ -1,14 +1,4 @@
-body {
-  background-color: #07b189;
-}
-
-header {
-  background-color: #117378;
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid #002739;
-}
-
+/*
 .wrapper-container {
   display: flex;
   justify-content: space-between;
@@ -108,13 +98,67 @@ main section p, main section li {
 #services li:hover {
   color: #fff;
   cursor: default;
+}*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .wrapper-container {
+    max-width: 100%;
+  }
+
+  header {
+    padding: 0 25px;
+  }
+
+  header nav li {
+    font-size: .9rem;
+    margin-left: 2rem;
+  }
+
+  #header-logo {
+    max-width: 30px;
+  }
+
+  #hero {
+    height: 275px;
+  }
+
+  #hero-text {
+    width: 80%;
+    padding: 10px;
+  }
+
+  main section {
+    max-width: fit-content;
+    padding: 0 25px;
+    margin: 20px 0 0;
+  }
+
+  main section p, main section li {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  #services ul {
+    height: auto;
+    flex-flow: column nowrap;
+  }
 }
 
+/*@media only screen and (min-width: 481px) and (max-width: 768px) {
 
+}
 
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 
+}
 
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
 
+}
+
+@media only screen and (min-width: 1201px) {
+
+}*/
 
 
 
