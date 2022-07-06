@@ -1,0 +1,46 @@
+body {
+  background-color: #07b189;
+}
+
+header {
+  background-color: #117378;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #002739;
+}
+
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+}
+
+#header-logo {
+  max-width: 60px;
+  width: 100%;
+  transform: rotate(90deg);
+}
+
+header a {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+header nav li {
+  list-style-type: none;
+  font-size: 1.25rem;
+  margin-left: 1.5rem;
+}
