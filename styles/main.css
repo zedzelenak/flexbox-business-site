@@ -18,7 +18,7 @@ header {
 }
 
 #header-logo {
-  max-width: 60px;
+  max-width: 45px;
   width: 100%;
   transform: rotate(90deg);
 }
@@ -29,11 +29,11 @@ header {
   border: 0;
   margin: 0;
   padding: 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 #nav-toggle:before {
-  content:'\2630';
+  content:'\2630'; /* hamburger icon unicode */
 }
 
 header a {
@@ -104,8 +104,6 @@ header nav li {
 }
 
 main section {
-  width: 100%;
-  max-width: 1280px;
   margin: 50px auto 0;
 }
 
@@ -121,14 +119,19 @@ main section p, main section li {
 }
 
 #services ul {
-  display: flex;
-  flex-flow: column wrap;
-  height: 250px;
-  padding: 0 0 0 15px;
+  column-count: 3;
+}
+
+#services li {
+  list-style-type: none;
+  border: 1px solid #002739;
+  padding: 10px;
+  text-align: center;
 }
 
 #services li:hover {
   color: #fff;
+  background-color: #002739;
   cursor: default;
 }
 

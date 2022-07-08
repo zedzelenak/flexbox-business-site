@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
     return (el.offsetParent === null)
   }
   
-  document.querySelector('#nav-toggle').addEventListener('click', () => {
+  document.querySelector('#nav-toggle').addEventListener('click', toggleMobileNav() => {
     const mobileNav = document.querySelector('header nav');
     mobileNav.style.display = isHidden(mobileNav) ? 'flex' : 'none';
   });

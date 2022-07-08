@@ -1,106 +1,4 @@
-/*
-.wrapper-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1280px;
-}
-
-#header-logo {
-  max-width: 60px;
-  width: 100%;
-  transform: rotate(90deg);
-}
-
-header a {
-  text-decoration: none;
-  font-weight: 500;
-  color: white;
-}
-
-header a:hover {
-  text-decoration: underline;
-}
-
-header nav ul {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-header nav li {
-  list-style-type: none;
-  font-size: 1.25rem;
-  margin-left: 1.5rem;
-}
-
-#hero {
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-  position: relative;
-  border-bottom: 1px solid #002739;
-}
-
-#hero-image {
-  background-image: url('../images/hero.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  filter: blur(5px);
-  transform: scale(1.25);
-  height: 100%;
-}
-
-#hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 50%;
-  background-color: rgba(0, 39, 57, 0.75);
-  color: #fff;
-  text-align: center;
-  padding: 50px 25px;
-  border: 2px solid #fff;
-}
-
-#hero-text p {
-  font-size: 1.2rem;
-}
-
-main section {
-  width: 100%;
-  max-width: 1280px;
-  margin: 50px auto 0;
-}
-
-main section h2 {
-  font-size: 2rem;
-  color: #fff;
-}
-
-main section p, main section li {
-  font-size: 1.15rem;
-  line-height: 1.6rem;
-  color: rgb(0, 39, 57);
-}
-
-#services ul {
-  display: flex;
-  flex-flow: column wrap;
-  height: 250px;
-  padding: 0 0 0 15px;
-}
-
-#services li:hover {
-  color: #fff;
-  cursor: default;
-}*/
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) {
   .wrapper-container {
     max-width: 100%;
   }
@@ -145,17 +43,30 @@ main section p, main section li {
   }
 
   #hero {
-    height: 275px;
+    height: 315px;
   }
 
   #hero-text {
-    width: 80%;
+    width: 85%;
     padding: 10px;
   }
 
+  #hero-text h1 {
+    font-size: 1.85rem;
+  }
+
+  #hero-text p {
+    font-size: 1.35rem;
+    line-height: 2rem;
+  }
+
   main section {
-    max-width: fit-content;
+    max-width: 100%;
     padding: 0 15px;
+    margin: 75px 0 0;
+  }
+
+  main section#about {
     margin: 20px 0 0;
   }
 
@@ -165,26 +76,102 @@ main section p, main section li {
   }
 
   #services ul {
-    height: auto;
-    flex-flow: column nowrap;
+    column-count: 1;
+    padding: 0;
+  }
+
+  #services li {
+    padding: 50px;
+    margin-bottom: 0;
   }
 }
 
-/*@media only screen and (min-width: 481px) and (max-width: 768px) {
-
+@media only screen and (min-width: 480px) {
+  main section {
+    padding: 0 15px;
+  }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 770px) {
+  #header-logo {
+    max-width: 45px;
+  }
 
+  header #nav-toggle {
+    display: none;
+  }
+
+  header nav {
+    position: initial;
+    display: block;
+    top: unset;
+    right: unset;
+    border: 0;
+    background: rgba(0,0,0,0);
+  }
+
+  header nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: unset;
+    padding: 0;
+  }
+
+  header nav li {
+    list-style-type: none;
+    font-size: 1.25rem;
+    margin-left: 1.5rem;
+    border-bottom: unset;
+    margin-left: 0;
+  }
+
+  #hero-text {
+    padding: 25px;
+  }
+
+  #services ul {
+    column-count: 2;
+  }
+
+  #services li {
+    margin-bottom: 15px;
+  }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+@media only screen and (min-width: 1026px) {
+  #hero {
+    height: 400px;
+  }
 
+  main section {
+    padding: 0 30px;
+  }
+
+  #services ul {
+    column-count: 3;
+    padding: 0;
+  }
 }
 
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1280px) {
+  .wrapper-container {
+    max-width: 1280px;
+  }
 
-}*/
+  main section {
+    width: 100%;
+    max-width: 1280px;
+    margin: 50px auto 0;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  #hero-text {
+    width: 1280px;
+  }
+}
 
 
 
