@@ -23,6 +23,19 @@ header {
   transform: rotate(90deg);
 }
 
+#nav-toggle {
+  color: #00273a;
+  background: rgba(0,0,0,0);
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+}
+
+#nav-toggle:before {
+  content:'\2630';
+}
+
 header a {
   text-decoration: none;
   font-weight: 500;
@@ -33,9 +46,18 @@ header a:hover {
   text-decoration: underline;
 }
 
+header #nav-toggle {
+  display: none;
+}
+
+header nav {
+  position: initial;
+}
+
 header nav ul {
   display: flex;
   flex-wrap: nowrap;
+  flex-direction: row;
   justify-content: space-between;
 }
 
