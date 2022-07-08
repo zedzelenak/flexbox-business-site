@@ -1,5 +1,17 @@
+html, body {
+  height: 100%;
+}
+
 body {
   background-color: #07b189;
+  display: flex;
+  flex-flow: column nowrap;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
 }
 
 header {
@@ -7,6 +19,8 @@ header {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #002739;
+  flex-grow: 0;
+  height: auto;
 }
 
 .wrapper-container {
@@ -103,6 +117,11 @@ header nav li {
   font-size: 1.2rem;
 }
 
+main {
+  flex-grow: 1;
+  overflow: auto;
+}
+
 main section {
   margin: 50px auto 0;
 }
@@ -133,6 +152,10 @@ main section p, main section li {
   color: #fff;
   background-color: #002739;
   cursor: default;
+}
+
+footer {
+  flex-grow: 0;
 }
 
 
